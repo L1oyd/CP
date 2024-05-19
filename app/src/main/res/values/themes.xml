@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SP" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:statusBarColor">@color/m3_ref_palette_neutral6</item>
+    </style>
+
+
+    <style name="Theme.SP" parent="Base.Theme.SP">
+        <item name="android:statusBarColor">@color/m3_ref_palette_neutral6</item>
+    </style>
+</resources>

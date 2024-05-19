@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="280dp"
+    android:height="170dp"
+    android:viewportWidth="280"
+    android:viewportHeight="170">
+
+    <!-- Зеленый прямоугольник с закругленными углами -->
+    <path
+        android:fillColor="#43af68"
+        android:pathData="M0,20 A20,20 0 0 1 20,0 H260 A20,20 0 0 1 280,20 V150 A20,20 0 0 1 260,170 H20 A20,20 0 0 1 0,150 Z" />
+
+    <!-- Черная диагональная полоса с прозрачностью -->
+    <path
+        android:fillColor="#000000"
+        android:fillAlpha="0.1"
+        android:pathData="M-150,55 L55,-15 L205,135 L2050,2050 Z" />
+
+    <!-- Текст в Android Vector не поддерживается напрямую, необходимо использовать картинку или добавить программно -->
+</vector>

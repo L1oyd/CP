@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/navigation_cards"
+        android:title="СПм"
+        android:icon="@drawable/card"/>
+
+    <item
+        android:id="@+id/navigation_news"
+        android:title="СП"
+        android:icon="@drawable/news" />
+
+    <item
+        android:id="@+id/navigation_players"
+        android:title="СПб"
+        android:icon="@drawable/players"/>
+
+    <item
+        android:id="@+id/navigation_menu"
+        android:title="Меню"
+        android:icon="@drawable/menu" />
+</menu>

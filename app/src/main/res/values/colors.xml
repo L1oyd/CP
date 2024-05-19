@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="zero">#00000000</color>
+
+
+    <color name="colorIconCards">#ff5454</color>
+    <color name="colorIconNews">#489eff</color>
+    <color name="colorIconPlayers">#995fe1</color>
+    <color name="colorIconMenu">#f3f3f3</color>
+
+    <color name="colorIconCardsSelected">#ff5454</color>
+    <color name="colorIconCardsDefault">#ff5454</color>
+    <color name="colorIconNewsSelected">#489eff</color>
+    <color name="colorIconNewsDefault">#489eff</color>
+    <color name="colorIconPlayersSelected">#995fe1</color>
+    <color name="colorIconPlayersDefault">#995fe1</color>
+    <color name="colorIconMenuSelected">#f3f3f3</color>
+    <color name="colorIconMenuDefault">#f3f3f3</color>
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:id="@+id/main_container">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:padding="8dp">
+
+        <!-- ImageView for Card Image -->
+        <ImageView
+            android:id="@+id/cardImage"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:src="@drawable/card_1"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"/>
+
+    <!-- TextView for Card Name -->
+    <TextView
+        android:id="@+id/cardName"
+        android:text="CardName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"/>
+
+    <!-- TextView for Card Number -->
+        <TextView
+            android:id="@+id/cardNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/cardImage"
+            android:layout_alignBottom="@+id/cardImage"
+            android:text="12345"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+    <!-- TextView for Card Balance -->
+        <TextView
+            android:id="@+id/cardBalance"
+            android:text="CardBalance"
+            android:textColor="#8f8f94"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_below="@id/cardName"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/AR"
+            android:text=" АР"
+            android:textColor="#8f8f94"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/cardBalance"
+            android:layout_alignTop="@id/cardBalance"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

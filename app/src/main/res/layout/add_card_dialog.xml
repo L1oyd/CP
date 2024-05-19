@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Добавить Карту"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/name"
+        android:paddingLeft="16dp"
+        android:textColorHint="#8f8f94"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/addcard"
+        android:hint="Название"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/number"
+        android:paddingLeft="16dp"
+        android:textColorHint="#8f8f94"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/addcard"
+        android:inputType="number"
+        android:hint="Номер"
+        android:maxLength="5"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/cardColor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="8dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/addcard"
+        />
+
+
+
+    <EditText
+        android:id="@+id/id"
+        android:paddingLeft="16dp"
+        android:textColorHint="#8f8f94"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/addcard"
+        android:hint="ID"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/token"
+
+        android:paddingLeft="16dp"
+        android:textColorHint="#8f8f94"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/addcard"
+        android:hint="TOKEN"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/cancel"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#38383e"
+            android:text="ОТМЕНА"
+            android:layout_marginRight="16dp"/>
+
+
+        <Button
+            android:id="@+id/ok"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6563ee"
+            android:text="OK"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

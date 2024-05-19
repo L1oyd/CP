@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="example_array">
+        <item>Синий</item>
+        <item>Фиолетовый</item>
+        <item>Розовый</item>
+        <item>Красный</item>
+        <item>Оранжевый</item>
+        <item>Жёлтый</item>
+        <item>Зелёный</item>
+        <item>Голубой</item>
+    </string-array>
+</resources>
