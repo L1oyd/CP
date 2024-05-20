@@ -1,6 +1,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-
+    <item
+        android:id="@+id/navigation_menu"
+        android:title="Меню"
+        android:icon="@drawable/menu" />
 
     <item
         android:id="@+id/navigation_cards"
@@ -16,9 +19,4 @@
         android:id="@+id/navigation_players"
         android:title="СПб"
         android:icon="@drawable/players"/>
-
-    <item
-        android:id="@+id/navigation_menu"
-        android:title="Меню"
-        android:icon="@drawable/menu" />
 </menu>

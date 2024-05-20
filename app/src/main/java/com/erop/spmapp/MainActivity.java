@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
 
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_container, com.erop.spmapp.SPM.cards.newInstance(), "cards")
+                    .replace(R.id.fragment_container, com.erop.spmapp.menu.newInstance(), "menu")
                     .commit();
         }
 
