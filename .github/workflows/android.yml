@@ -48,6 +48,9 @@ jobs:
           name: app-release-unsigned.apk
           path: app-release-unsigned.apk
 
+      - name: Check if downloaded APK exists
+        run: if [ ! -f app-release-unsigned.apk ]; then echo "Downloaded APK not found!"; exit 1; fi
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
