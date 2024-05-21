@@ -2,6 +2,7 @@ package com.erop.spmapp.wallet;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -11,6 +12,11 @@ public class CardUtils {
 
     public interface CardInfoCallback {
         void onCardInfoReceived(int balance);
+        void onError(String error);
+    }
+
+    public interface CardsCallback {
+        void onCardsReceived(List<String> cardNumbers);
         void onError(String error);
     }
 

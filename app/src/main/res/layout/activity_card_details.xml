@@ -31,7 +31,6 @@
                 android:layout_alignBottom="@+id/cardImage"
                 android:gravity="center"
                 android:text="00000"
-
                 android:paddingRight="32dp"
                 android:paddingBottom="8dp"
                 android:textColor="@color/white"
@@ -104,9 +103,30 @@
                     android:layout_gravity="left"
                     android:layout_marginBottom="16dp"
                     android:gravity="center"
-                    android:text="Перевод по номеру"
+                    android:text="Перевод"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:textColor="@color/white" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/radioByNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="По номеру"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/radioByUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="По нику" />
+                </RadioGroup>
 
                 <EditText
                     android:id="@+id/number"
@@ -121,6 +141,19 @@
                     android:imeOptions="actionNext"
                     android:inputType="numberDecimal"
                     android:nextFocusForward="@+id/sum"/>
+
+                <EditText
+                    android:id="@+id/usernameED"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="16dp"
+                    android:textColorHint="#8f8f94"
+                    android:background="@drawable/addcard"
+                    android:hint="Имя получателя"
+                    android:layout_marginBottom="8dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:visibility="gone" />
 
                 <EditText
                     android:id="@+id/sum"
@@ -166,14 +199,14 @@
 
                 </RelativeLayout>
 
-                    <Button
-                        android:layout_gravity="right"
-                        android:id="@+id/send"
-                        android:textColor="@color/white"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="#6563ee"
-                        android:text="ПЕРЕВЕСТИ"/>
+                <Button
+                    android:layout_gravity="right"
+                    android:id="@+id/send"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#6563ee"
+                    android:text="ПЕРЕВЕСТИ"/>
 
             </LinearLayout>
         </FrameLayout>
