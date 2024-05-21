@@ -46,13 +46,13 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: app-release-unsigned.apk
-          path: app-release-unsigned.apk
+          path: .
 
       - name: List files in current directory
         run: ls -al
 
       - name: Check if downloaded APK exists
-        run: if [ ! -f app-release-unsigned.apk ]; then echo "Downloaded APK not found!"; exit 1; fi
+        run: if [ ! -f ./app-release-unsigned.apk ]; then echo "Downloaded APK not found!"; exit 1; fi
 
       - name: Create Release
         id: create_release
@@ -71,6 +71,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PAT }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: app-release-unsigned.apk
+          asset_path: ./app-release-unsigned.apk
           asset_name: app-release-unsigned.apk
           asset_content_type: application/vnd.android.package-archive
