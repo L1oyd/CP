@@ -48,6 +48,9 @@ jobs:
           name: app-release-unsigned.apk
           path: app-release-unsigned.apk
 
+      - name: List files in current directory
+        run: ls -al
+
       - name: Check if downloaded APK exists
         run: if [ ! -f app-release-unsigned.apk ]; then echo "Downloaded APK not found!"; exit 1; fi
 
